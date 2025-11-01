@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Showdown - Cybersecurity Defense Suite</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        .download-section {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .download-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .download-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .feature h3 {
+            color: #ffd93d;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        .command-box {
+            background: rgba(0, 0, 0, 0.4);
+            color: #00ff88;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            border-left: 4px solid #00ff88;
+        }
+        .warning {
+            background: rgba(255, 165, 0, 0.2);
+            border: 1px solid rgba(255, 165, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #ffa500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 Persistent Showdown</h1>
+        <p class="subtitle">Complete All-in-One Cybersecurity Suite</p>
+        
+        <div style="background: linear-gradient(135deg, #ff6b6b, #ffd93d); padding: 20px; border-radius: 15px; margin: 20px 0; color: white; text-align: center;">
+            <h2><span class="emoji">⚡</span>QUICK START FOR COLLEAGUES</h2>
+            <p style="font-size: 18px; margin: 10px 0;"><strong>Download → Run as Admin → Select Option 9 (AutoStart)</strong></p>
+            <p style="font-size: 14px; margin: 5px 0;">This installs automatic protection that starts when your computer boots!</p>
+        </div>
+        
+        <div class="download-section">
+            <h2><span class="emoji">📦</span>Complete Solution Download</h2>
+            <p>Get the entire Persistent Showdown suite in a single PowerShell file!</p>
+            
+            <div style="text-align: center;">
+                <a href="PersistentShowdown_AllInOne.ps1" class="download-button">
+                    📥 Download All-in-One Suite
+                </a>
+            </div>
+            
+            <div class="command-box">
+                <strong>Windows Download Command:</strong><br>
+                # Download from your deployment server:
+Invoke-WebRequest http://YOUR_SERVER_IP:8000/PersistentShowdown_AllInOne.ps1 -OutFile defender.ps1
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3><span class="emoji">🛡️</span>Real-Time Protection</h3>
+                <p>Active monitoring system that detects and blocks Choco attacks as they happen. Provides continuous protection against file creation, registry modifications, and malicious processes with Choco intelligence.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="emoji">🔍</span>Choco-Aware Defender</h3>
+                <p>Comprehensive malware detection with timing-aware scanning for all 5 Choco attack vectors: Registry (35-40s), Startup VBS (50-55s), Tasks (45s+60s), IFEO hijacking, and WMI events (70s).</p>
+            </div>
+            <div class="feature">
+                <h3><span class="emoji">🔴</span>Educational Attacker</h3>
+                <p>Safe educational malware simulator for testing with multiple persistence mechanisms including registry, startup, and scheduled tasks.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="emoji">👁️</span>Persistent Watchdog</h3>
+                <p>Boot-time protection system that prevents malware recreation and provides continuous monitoring.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="emoji">🏆</span>Competition Mode</h3>
+                <p>Automated attacker vs defender showdown with real-time scoring and comprehensive reporting.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="emoji">🧪</span>Testing Framework</h3>
+                <p>Comprehensive test suite to validate all components with registry, startup, and process detection tests.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="emoji">🌐</span>Web Server</h3>
+                <p>Built-in HTTP server for remote deployment and file distribution in isolated environments.</p>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <h2><span class="emoji">🎯</span>Choco Attack Intelligence</h2>
+            <p>This defender is specifically enhanced to detect and block all known Choco attack vectors:</p>
+            
+            <div class="feature">
+                <h3><span class="emoji">⏱️</span>Timing-Aware Detection</h3>
+                <p><strong>✅ Registry Run Keys:</strong> Detects HKLM & HKCU entries that execute after 35-40 seconds<br>
+                <strong>✅ Startup VBS Scripts:</strong> Finds hidden PowerShell launchers with 50-55 second delays<br>
+                <strong>✅ Scheduled Tasks:</strong> Identifies system startup (45s) and user logon (60s) tasks<br>
+                <strong>✅ IFEO Hijacking:</strong> Monitors common executables (notepad.exe, cmd.exe, etc.)<br>
+                <strong>✅ WMI Event Subscriptions:</strong> Detects system event triggers with 70-second delays</p>
+            </div>
+
+            <div class="feature">
+                <h3><span class="emoji">🛡️</span>Active Protection</h3>
+                <p><strong>✅ AutoStart Mode:</strong> Install automatic protection that starts at boot (requires admin)<br>
+                <strong>✅ Real-Time Mode:</strong> Manual protection that blocks attacks as they happen<br>
+                <strong>✅ Choco Intelligence:</strong> Specifically designed to counter all 5 Choco attack vectors<br>
+                Your colleagues get continuous protection that reacts and defends automatically!</p>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <h2><span class="emoji">🚀</span>Quick Start Guide</h2>
+            
+            <h3>1. Interactive Menu (Recommended)</h3>
+            <div class="command-box">
+                .\PersistentShowdown.ps1 -Mode Menu
+            </div>
+
+            <h3>2. Run Defender (Auto Mode)</h3>
+            <div class="command-box">
+                .\PersistentShowdown.ps1 -Mode Defender -AutoRemediate
+            </div>
+
+            <h3>3. Automatic Startup Protection (BEST for Colleagues!)</h3>
+            <div class="command-box">
+                # Run as Administrator, then:
+.\PersistentShowdown.ps1 -Mode AutoStart
+# OR use the interactive menu and select option 9
+            </div>
+
+            <h3>4. Real-Time Protection (Manual)</h3>
+            <div class="command-box">
+                .\PersistentShowdown.ps1 -Mode RealTime
+# OR use the interactive menu and select option 8
+            </div>
+
+            <h3>5. Full Competition Demo</h3>
+            <div class="command-box">
+                .\PersistentShowdown.ps1 -Mode Competition
+            </div>
+
+            <h3>6. Install Educational Malware</h3>
+            <div class="command-box">
+                .\PersistentShowdown.ps1 -Mode Attacker -Action Install
+            </div>
+
+            <h3>7. Run Comprehensive Tests</h3>
+            <div class="command-box">
+                .\PersistentShowdown.ps1 -Mode Test
+            </div>
+
+            <h3>8. Start Deployment Server</h3>
+            <div class="command-box">
+                .\PersistentShowdown.ps1 -Mode WebServer -ServerPort 8000
+            </div>
+        </div>
+
+        <div class="warning">
+            <h3><span class="emoji">⚠️</span>Security Notice</h3>
+            <p><strong>Educational Use Only:</strong> This suite is designed for cybersecurity education and testing in controlled environments. Always ensure you have proper authorization before testing security tools.</p>
+        </div>
+    </div>
+</body>
+</html>
